@@ -8,3 +8,13 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<form method="post">
+    <div class="form-group">
+        <input asp-for="FirstName" type="text" placeholder="Type your first name" />
+        <input asp-for="LastName" type="text" placeholder="Type your last name" />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+<h3>Hi @Model.FirstName @Model.LastName</h3>
